@@ -1,0 +1,115 @@
+#menu_area ul li:hover{
+    cursor: pointer;color: blueviolet;
+    transition: 0.3s;
+}
+.cool-link::after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: blueviolet;
+    transition: width 0.3s;
+}
+.cool-link:hover::after{
+    width: 100%;
+}
+#titles_area{
+    padding: 130px;
+}
+#titles_area h1{
+    font-size: 55px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#titles_area button{
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10%;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#about_section{
+    padding:15px;
+    text-align: justify;
+}
+#about_section h3{
+    font-size: 20px;
+    line-height: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+#about_section p{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 35px;
+}
+#skill_section h3{
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.skill_name{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 22px;
+    transition: 0.3s;
+}
+.skill_name:hover{
+    transform: scale(1.03);
+}
+#project_section h3{
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+@media(max-width:1350px) and (min-width:500px){
+    #titles_area h1{
+        font-size: 45px;
+    }
+}
+@media(max-width:1000px) and (min-width:500px){
+    #titles_area{
+        padding: 50px;
+    }
+    #titles_area button{
+        margin-top: 5%;
+    }
+}
+
+@media(max-width:500px) and (min-width:0px){
+    #titles_area{
+        padding: 50px;
+    }
+    #titles_area h1{
+        font-size: 30px;
+    }
+    #titles_area button{
+        width: 100px;
+        font-size: 14px;
+        padding: 8px;
+        margin-top: 5%;
+    }
+    .skill_name{
+        width: 94%;
+        margin-left: 3%;
+    }
+    #about_section h3{
+        font-size: 18px;
+    }
+    #about_section p{
+        font-size: 16px;
+    }
+    #skill_section h3{
+        font-size: 18px;
+    }
+    .skill_name{
+        font-size: 16px;
+    }
+    #project_section h3{
+        font-size: 18px;
+    }
+}
